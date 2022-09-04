@@ -1,7 +1,7 @@
 {
   "vendor": "agenciamagma",
   "name": "node-api-test",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "title": "Teste de Serviços",
   "description": "APP responsável pelos serviços criados ao Ecommerce",
   "dependencies": {},
