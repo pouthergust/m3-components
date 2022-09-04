@@ -1,0 +1,14 @@
+{
+  "memory": 256,
+  "ttl": 60,
+  "timeout": 120,
+  "minReplicas": 2,
+  "maxReplicas": 5,
+  "workers": 2,
+  "routes": {
+    "sellers": {
+      "path": "/_v/m3-services/sellers",
+      "public": true
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "vendor": "agenciamagma",
+  "name": "node-api-test",
+  "version": "0.0.1",
+  "title": "Teste de Serviços",
+  "description": "APP responsável pelos serviços criados ao Ecommerce",
+  "dependencies": {},
+  "builders": {
+    "node": "6.x"
+  },
+  "scripts": {
+    "postreleasy": "vtex publish --verbose"
+  },
+  "registries": [
+    "smartcheckout"
+  ],
+  "credentialType": "absolute",
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}
