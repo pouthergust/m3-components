@@ -1,0 +1,30 @@
+.highPrice,
+.lowPrice,
+.installment,
+.loading {
+  font-size: 13px;
+  text-align: left;
+  margin-block: 2.5px;
+}
+
+.highPrice {
+  color: #8F8F8F;
+  text-decoration: line-through;
+}
+
+.lowPrice,
+.installment {
+  font-weight: normal;
+}
+
+.lowPrice strong {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--shelf-product) .lowPrice strong{
+  font-size: 18px;
+  line-height: 15px;
+  letter-spacing: 0.02em;
+  margin-block: 3px 2px;
+}
