@@ -4,11 +4,18 @@
   "timeout": 120,
   "minReplicas": 2,
   "maxReplicas": 5,
-  "workers": 2,
+  "workers": 1,
   "routes": {
     "sellers": {
-      "path": "/_v/m3-services/sellers",
-      "public": true
+      "path": "/_v1/m3-services/sellers",
+      "public": true,
+      "access": "authorized",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": ["GET"]
+        }
+      ]
     }
   }
 }

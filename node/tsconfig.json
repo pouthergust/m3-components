@@ -3,7 +3,7 @@
   "compilerOptions": {
     "types": ["node"],
     "typeRoots": ["node_modules/@types"],
-    "module": "commonjs",
+    "module": "CommonJS",
     "noEmitOnError": true
   },
   "include": ["./**/*.ts", "./typings/*.d.ts"]

@@ -9,7 +9,7 @@ export async function listSellers(
     const nl = await sellers.list();
 
     ctx.body = nl
-    ctx.status = 201
+    ctx.status = 200
 
     await next()
   } catch (error) {
