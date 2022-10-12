@@ -1,0 +1,10 @@
+.clearButton {
+    color: #1E1D1D;
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    margin-top: 20px;
+    text-align: end;
+    text-transform: uppercase;
+}
