@@ -1,0 +1,12 @@
+.App {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 720px) {
+  .wrapperMyLocation { 
+    grid-template-columns: 1fr;
+  }
+}

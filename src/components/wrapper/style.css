@@ -1,0 +1,15 @@
+.wrapperMyLocation {
+    display: grid;
+    gap: 10px;
+    padding-bottom: 32px;
+  }
+  
+  @media (min-width: 721px) {
+    .wrapperMyLocation {
+      grid-template-columns: repeat(2, calc(50% - 5px));
+    }
+  
+    .buttonMyLocation {
+        grid-column: 1/3;
+    }
+  }

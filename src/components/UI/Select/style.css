@@ -1,0 +1,13 @@
+.selectMyLocation {
+    cursor: pointer;
+    font-family: "Mulish";
+    border-radius: 0;
+    height: 40px;
+}
+
+
+.selectMyLocation.--default {
+    border: 1px solid #000;
+    color: #000;
+    padding-inline: 10px;
+}
