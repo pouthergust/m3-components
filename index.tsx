@@ -30,8 +30,8 @@ function Price({
     );
 }
 
-Price.schema = {
-    title: "Preço",
-};
+// Price.schema = {
+//     title: "Preço",
+// };
 
 export default Price;

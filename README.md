@@ -2,15 +2,29 @@
 
 Componente que consulta o preço de determinado produto e cria: o valor de venda, o valor de listagem e o parcelamento disponivel. Uma grande vantagem desse componente é nossa liberdade de manipulação do preço, podendo utiliza-lo tanto na pagina de produto quanto nas prateleiras.
 
-Esse componente usa o `vtex.product-context` então é necessario que esteja declarado no `manifest.json` como dependencia
+Esse componente usa o `vtex.product-context` então é necessario que esteja declarado no `manifest.json` como dependencia. 
 
-![Imagem demonstrativa do componente em renderizado](./docs/imgem-demonstrativa.png)
+![Imagem demonstrativa do componente renderizado](./docs/imgem-demonstrativa.png)
+
+Caso queira permitir edição pelo site Editor, basta descomentar esse trecho de código: 
+
+![Imagem do código](./docs/code.png)
+
+Os campos editáveis aparecerão dessa forma: 
+
+![Imagem demonstrativa do componente no site editor](./docs/fields-site-editor.png)
 
 ## Implementando o componente no projeto
 
 1. clone o repo para dentro da pasta `react/components`
 
-2. Na raiz da pasta `react` crie um arquivo que irá importa e exportar o componente
+2. Na raiz da pasta `react` crie um script que irá importa e exportar o componente
+
+```js
+import Price from "./components/Price";
+
+export default Price;
+```
 
 3. Em `contentSchemas.json` podemos declara-lo da seguinte forma:
 
@@ -20,19 +34,22 @@ Esse componente usa o `vtex.product-context` então é necessario que esteja dec
         "type": "object",
         "properties": {
             "showHighPrice": {
-                "title": "Tipo",
+                "title": "Preço de listagem (listprice)",
                 "type": "boolean",
-                "description": "Valor padrão desta propriedade é 'true'"
+                "description": "Valor padrão desta propriedade é 'true'",
+                "default": true
             },
             "showLowPrice": {
-                "title": "Tipo",
+                "title": "Preço de venda (sellingprice)",
                 "type": "boolean",
-                "description": "Valor padrão desta propriedade é 'true'"
+                "description": "Valor padrão desta propriedade é 'true'",
+                "default": true
             },
             "showInstallments": {
-                "title": "Tipo",
+                "title": "Parcelamento (installment)",
                 "type": "boolean",
-                "description": "Valor padrão desta propriedade é 'true'"
+                "description": "Valor padrão desta propriedade é 'true'",
+                "default": true
             },
             "discount": {
                 "title": "Desconto",
