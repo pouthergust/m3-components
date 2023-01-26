@@ -14,14 +14,8 @@
   z-index: 1301;
 }
 
-.toast.success { 
-  background: rgb(109, 175, 109);
-}
+.toast.success { background: #6daf6d; }
+.toast.failed  { background: #ff4c4c; }
+.toast.warning { background: #ffe300; }
 
-.toast.failed { 
-  background: #ff4c4c;;
-}
-
-.visible {
-  opacity: 1;
-}
+.visible { opacity: 1; }

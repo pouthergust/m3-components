@@ -1,19 +1,21 @@
-import React from 'react'
-import styles from './styles.css'
+import React from "react";
+import styles from "./styles.css";
 
 interface ToastProps {
   visible: boolean
   text: string
-  status: 'success' | 'failed'
+  status: StatusProps
 }
+
+export type StatusProps = "success" | "failed" | "warning";
 
 function Toast({ visible, text, status }: ToastProps) {
   return (
     <div
       className={`
         ${styles.toast} 
-        ${status === 'success' ? styles.success : styles.failed}
-        ${visible ? styles.visible : ''}
+        ${styles[status]}
+        ${visible ? styles.visible : ""}
       `}
     >
       {text}
