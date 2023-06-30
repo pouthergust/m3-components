@@ -7,3 +7,4 @@
 - Clear Filter Button
 - Form
 - Select Location
+- Image
