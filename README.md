@@ -23,7 +23,7 @@ interface M3ImgProps extends React.ImgHTMLAttributes<HTMLImageElement> {
 
     /**
      * responsive é um array de objetos que determina em qual tamanho a imagem especificada deverá ser mostrada. O objeto possui duas propriedades obrigatórias:
-     *  - media: É o tamanho especificado para determinada imagem. Ex: (max-width: 1024px)
+     *  - media: É o tamanho especificado para determinada imagem. Ex: 'max-width: 1024px'
      *  - srcset: É a imagem que será apresentada em determinado tamanho
       */
     responsive?: Array<{ media: string, srcset: string }>

@@ -25,7 +25,7 @@ function M3Picture({
 
     return (
         <picture>
-            {responsive && responsive.map(({media, srcset}, index) => (
+            {responsive?.map(({media, srcset}, index) => (
                 <source key={index} media={`(${media})`} srcSet={srcset} />
             ))}
             <img src={src} {...rest} />
